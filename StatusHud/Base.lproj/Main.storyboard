@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kfj-lV-q5N">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--自定义状态栏hud-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="je5-tO-vyd">
+                                <rect key="frame" x="148" y="198" width="60" height="44"/>
+                                <color key="backgroundColor" red="0.98756033182144165" green="0.020395698025822639" blue="0.27152824401855469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="JZM-dD-OLx"/>
+                                </constraints>
+                                <state key="normal" title="上">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="topBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zi8-TM-RZt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXY-gl-6HG">
+                                <rect key="frame" x="148" y="293" width="60" height="44"/>
+                                <color key="backgroundColor" red="0.98756033182144165" green="0.020395698025822639" blue="0.27152824401855469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8wR-IJ-zBh"/>
+                                </constraints>
+                                <state key="normal" title="左">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xto-pa-XeQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k60-Vf-nnJ">
+                                <rect key="frame" x="148" y="375" width="60" height="44"/>
+                                <color key="backgroundColor" red="0.98756033182144165" green="0.020395698025822639" blue="0.27152824401855469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="sVG-8f-C4r"/>
+                                </constraints>
+                                <state key="normal" title="右">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ybo-di-1L2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k60-Vf-nnJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="148" id="E0m-xP-Kig"/>
+                            <constraint firstItem="bXY-gl-6HG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="148" id="Pm9-uO-QIY"/>
+                            <constraint firstAttribute="trailing" secondItem="bXY-gl-6HG" secondAttribute="trailing" constant="167" id="VKX-Ux-Uaj"/>
+                            <constraint firstAttribute="trailing" secondItem="je5-tO-vyd" secondAttribute="trailing" constant="167" id="dvG-dP-eK8"/>
+                            <constraint firstAttribute="trailing" secondItem="k60-Vf-nnJ" secondAttribute="trailing" constant="167" id="fac-Xl-rdv"/>
+                            <constraint firstItem="k60-Vf-nnJ" firstAttribute="top" secondItem="bXY-gl-6HG" secondAttribute="bottom" constant="38" id="fcT-U1-luS"/>
+                            <constraint firstItem="bXY-gl-6HG" firstAttribute="top" secondItem="je5-tO-vyd" secondAttribute="bottom" constant="51" id="rb3-wq-els"/>
+                            <constraint firstItem="je5-tO-vyd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="148" id="tlG-qk-4Vz"/>
+                            <constraint firstItem="je5-tO-vyd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="134" id="wca-IN-YBe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="自定义状态栏hud" id="efr-VH-3US"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727.5" y="972.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XcX-G2-zLR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kfj-lV-q5N" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NlO-36-2gJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AuS-eN-Dyp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7yx-fs-wuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="999"/>
+        </scene>
+    </scenes>
+</document>
